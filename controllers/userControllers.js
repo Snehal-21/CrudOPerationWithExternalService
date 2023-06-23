@@ -36,7 +36,7 @@ export const register=async(req,res)=>{
 export const addproduct=async(req,res)=>{
     try{
         const{title,price,descripttion,image,category}=req.body;
-
+ 
         fetch('https://fakestoreapi.com/products',{
             method:"POST",
             body:JSON.stringify({
